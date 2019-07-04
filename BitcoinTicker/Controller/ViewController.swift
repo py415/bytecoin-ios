@@ -53,6 +53,9 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         
         print("The current currency selected is: " + String(currencyArray[row]))
         
+        finalURL = baseURL + currencyArray[row]
+        print(finalURL)
+        
     }
     //
     //    //MARK: - Networking
