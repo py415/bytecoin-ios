@@ -8,78 +8,90 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
     let baseURL = "https://apiv2.bitcoinaverage.com/indices/global/ticker/BTC"
     let currencyArray = ["AUD", "BRL","CAD","CNY","EUR","GBP","HKD","IDR","ILS","INR","JPY","MXN","NOK","NZD","PLN","RON","RUB","SEK","SGD","USD","ZAR"]
     var finalURL = ""
-
+    
     //Pre-setup IBOutlets
     @IBOutlet weak var bitcoinPriceLabel: UILabel!
     @IBOutlet weak var currencyPicker: UIPickerView!
     
-
-    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-       
+        
+        currencyPicker.dataSource = self
+        currencyPicker.delegate = self
+        
     }
-
     
     //TODO: Place your 3 UIPickerView delegate methods here
+    // This method asks us how many COLUMNS we want in our UIPicker
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        
+        return 1
+        
+    }
     
+    // This method asks us how many ROWS we want in our UIPicker
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        
+        return currencyArray.count
+        
+    }
     
+    // This method asks us what each of the rows will be titled in our UIPicker
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        
+        return currencyArray[row]
+        
+    }
     
-
-    
-    
-    
-//    
-//    //MARK: - Networking
-//    /***************************************************************/
-//    
-//    func getWeatherData(url: String, parameters: [String : String]) {
-//        
-//        Alamofire.request(url, method: .get, parameters: parameters)
-//            .responseJSON { response in
-//                if response.result.isSuccess {
-//
-//                    print("Sucess! Got the weather data")
-//                    let weatherJSON : JSON = JSON(response.result.value!)
-//
-//                    self.updateWeatherData(json: weatherJSON)
-//
-//                } else {
-//                    print("Error: \(String(describing: response.result.error))")
-//                    self.bitcoinPriceLabel.text = "Connection Issues"
-//                }
-//            }
-//
-//    }
-//
-//    
-//    
-//    
-//    
-//    //MARK: - JSON Parsing
-//    /***************************************************************/
-//    
-//    func updateWeatherData(json : JSON) {
-//        
-//        if let tempResult = json["main"]["temp"].double {
-//        
-//        weatherData.temperature = Int(round(tempResult!) - 273.15)
-//        weatherData.city = json["name"].stringValue
-//        weatherData.condition = json["weather"][0]["id"].intValue
-//        weatherData.weatherIconName =    weatherData.updateWeatherIcon(condition: weatherData.condition)
-//        }
-//        
-//        updateUIWithWeatherData()
-//    }
-//    
-
-
-
-
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
+        print("The current currency selected is: " + String(currencyArray[row]))
+        
+    }
+    //
+    //    //MARK: - Networking
+    //    /***************************************************************/
+    //
+    //    func getWeatherData(url: String, parameters: [String : String]) {
+    //
+    //        Alamofire.request(url, method: .get, parameters: parameters)
+    //            .responseJSON { response in
+    //                if response.result.isSuccess {
+    //
+    //                    print("Sucess! Got the weather data")
+    //                    let weatherJSON : JSON = JSON(response.result.value!)
+    //
+    //                    self.updateWeatherData(json: weatherJSON)
+    //
+    //                } else {
+    //                    print("Error: \(String(describing: response.result.error))")
+    //                    self.bitcoinPriceLabel.text = "Connection Issues"
+    //                }
+    //            }
+    //
+    //    }
+    //
+    //    //MARK: - JSON Parsing
+    //    /***************************************************************/
+    //
+    //    func updateWeatherData(json : JSON) {
+    //
+    //        if let tempResult = json["main"]["temp"].double {
+    //
+    //        weatherData.temperature = Int(round(tempResult!) - 273.15)
+    //        weatherData.city = json["name"].stringValue
+    //        weatherData.condition = json["weather"][0]["id"].intValue
+    //        weatherData.weatherIconName =    weatherData.updateWeatherIcon(condition: weatherData.condition)
+    //        }
+    //
+    //        updateUIWithWeatherData()
+    //    }
+    //
 }
 
