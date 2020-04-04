@@ -1,17 +1,33 @@
+# ByteCoin
 
-![App Brewery Banner](Documentation/AppBreweryBanner.png)
+## Table of Contents
+1. [Overview](#Overview)
+2. [Product Spec](#Product-Spec)
+3. [App Walkthrough](#App-Walkthrough)
+4. [Open-Source libraries used](#Open-Source-libraries-used)
+5. [Credits](#Credits)
 
-#  Bitcoin Ticker
+## Overview
+### Description
 
-## Our Goal
+ByteCoin is an app that will give you the latest Bitcoin prices in all the popular, traded currencies, so you can track how well your Bitcoin investments are doing on the go.
 
-The objective of this challenge is to apply the skills you learned in the Clima tutorial and make a Bitcoin price reporter. We are going to revisit how to use Cocoapods, networking calls and JSON parsing. This will be the most advanced challenge you will face to date. We believe in you!
+## Product Spec
+### User Stories
 
-## What you will create
+- [ ] User shall be able to select change currencies.
+- [ ] User shall be able to see the latest Bitcoin prices.
 
-We’re going to make a Bitcoin price ticker. The app will give you the latest Bitcoin prices in all the popular, traded currencies, so you can track how well your Bitcoin investments are doing on the go.
+## App Walkthrough
 
+Here's a GIF of how the app works:
+
+<img src="ADD_GIF_LINK" width=250><br>
+
+## Open-source libraries used
+
+- [LIBRARY NAME](ADD_SOURCE_LINK_HERE) - Add a description here.
+
+## Credits
 
 >This is a companion project to The App Brewery's Complete App Developement Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
-
-![End Banner](Documentation/readme-end-banner.png)
