@@ -2,7 +2,7 @@
 
 ## Table of Contents
 1. [Overview](#Overview)
-2. [Product Spec](#Product-Spec)
+2. [Product Specs](#Product-Specs)
 3. [App Walkthrough](#App-Walkthrough)
 4. [APIs Used](#APIs-Used)
 5. [Credits](#Credits)
@@ -12,7 +12,7 @@
 
 ByteCoin is an app that will give you the latest Bitcoin prices in all the popular, traded currencies, so you can track how well your Bitcoin investments are doing on the go.
 
-## Product Spec
+## Product Specs
 ### User Stories
 
 - [X] User shall be able to select change currencies.
@@ -22,7 +22,7 @@ ByteCoin is an app that will give you the latest Bitcoin prices in all the popul
 
 Here's a GIF of how the app works:
 
-<img src="https://i.imgur.com/0IuoElP.gif" width=250><br>
+<img src="https://user-images.githubusercontent.com/35745973/81490936-bde7ce80-923c-11ea-8bfd-85f41d2f69bf.gif" width=250><br>
 
 ## APIs Used
 
@@ -30,4 +30,4 @@ Here's a GIF of how the app works:
 
 ## Credits
 
->This is a companion project to The App Brewery's Complete App Developement Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
+>This is a companion project to The App Brewery's Complete App Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
