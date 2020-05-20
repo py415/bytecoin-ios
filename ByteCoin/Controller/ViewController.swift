@@ -10,13 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    // Outlets
+    // MARK: - Outlets
     @IBOutlet weak var bitcoinLabel: UILabel!
     @IBOutlet weak var currencyLabel: UILabel!
     @IBOutlet weak var currencyPicker: UIPickerView!
     
-    // Properties
-    var coinManager = CoinManager()
+    // MARK: - Properties
+    private var coinManager = CoinManager()
     
     override func viewDidLoad() {
         
@@ -29,6 +29,7 @@ class ViewController: UIViewController {
         
         // Show default BTC price in USD
         coinManager.getCoinPrice(for: "USD")
+        
     }
     
 }

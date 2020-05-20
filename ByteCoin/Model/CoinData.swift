@@ -10,6 +10,7 @@ import Foundation
 
 struct CoinData: Codable {
     
+    // MARK: - Properties
     let time: String
     let asset_id_base: String
     let asset_id_quote: String

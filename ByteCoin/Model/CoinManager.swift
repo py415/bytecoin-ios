@@ -8,6 +8,8 @@
 
 import Foundation
 
+// MARK: - Protocol Section
+
 protocol CoinManagerDelegate: class {
     
     func didUpdateBTC(rate: String, currency: String)
@@ -18,11 +20,12 @@ protocol CoinManagerDelegate: class {
 
 struct CoinManager {
     
-    // TODO: Remove API Key (appID) before commiting to Git
+    // MARK: - Properties
+    weak var delegate: CoinManagerDelegate?
+    
     let baseURL = "https://rest.coinapi.io/v1/exchangerate/BTC/"
     let currencyArray = ["AUD", "BRL", "CAD", "CNY", "EUR", "GBP", "HKD", "IDR", "ILS", "INR", "JPY", "MXN", "NOK", "NZD", "PLN", "RON", "RUB", "SEK", "SGD", "USD", "ZAR"]
-    let apiKey = "***REMOVED***"
-    weak var delegate: CoinManagerDelegate?
+    let apiKey = Constant.apiKey!
     
     func getCoinPrice(for currency: String) {
         
@@ -32,7 +35,7 @@ struct CoinManager {
         
         if let url = URL(string: urlString) {
             let session = URLSession(configuration: .default)
-            let task = session.dataTask(with: url) { (data, response, error) in
+            let task = session.dataTask(with: url) { (data, _, error) in
                 if error != nil {
                     self.delegate?.didFailWithError(error!)
                     return
