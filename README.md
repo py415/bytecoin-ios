@@ -4,7 +4,7 @@
 1. [Overview](#Overview)
 2. [Product Specs](#Product-Specs)
 3. [App Walkthrough](#App-Walkthrough)
-4. [APIs Used](#APIs-Used)
+4. [APIs](#APIs)
 5. [Credits](#Credits)
 
 ## Overview
@@ -22,12 +22,12 @@ ByteCoin is an app that will give you the latest Bitcoin prices in all the popul
 
 Here's a GIF of how the app works:
 
-<img src="https://user-images.githubusercontent.com/35745973/81490936-bde7ce80-923c-11ea-8bfd-85f41d2f69bf.gif" width=250><br>
+<img src="https://user-images.githubusercontent.com/35745973/81490936-bde7ce80-923c-11ea-8bfd-85f41d2f69bf.gif" width=250>
 
-## APIs Used
+## APIs
 
 - [CoinAPI.io](https://www.coinapi.io/) - A platform which provides fast, reliable and unified data APIs to cryptocurrency markets.
 
 ## Credits
 
->This is a companion project to The App Brewery's Complete App Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
+>This is a companion project to The App Brewery's Complete App Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/).
