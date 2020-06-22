@@ -15,14 +15,14 @@ ByteCoin is an app that will give you the latest Bitcoin prices in all the popul
 ## Product Specs
 ### User Stories
 
-- [X] User shall be able to select change currencies.
+- [X] User shall be able to change selected currencies.
 - [X] User shall be able to see the latest BTC prices.
 
 ## App Walkthrough
 
 Here's a GIF of how the app works:
 
-<img src="https://user-images.githubusercontent.com/35745973/81490936-bde7ce80-923c-11ea-8bfd-85f41d2f69bf.gif" width=250>
+<img src="https://github.com/py415/app-resources/blob/master/ios/ios-bytecoin.gif" width=250>
 
 ## APIs
 
