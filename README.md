@@ -22,7 +22,7 @@ ByteCoin is an app that will give you the latest Bitcoin prices in all the popul
 
 Here's a GIF of how the app works:
 
-<img src="https://github.com/py415/app-resources/blob/master/ios/ios-bytecoin.gif" width=250>
+<img src="https://raw.githubusercontent.com/py415/app-resources/master/ios/ios-bytecoin.gif" width="250" />
 
 ## APIs
 
